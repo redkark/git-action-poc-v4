@@ -54,7 +54,7 @@ if test "$branchOption" = 1; then
 	git checkout --no-track -b "feat-"${ticket,,}"/"$USERNAME"/"${description,,} origin/main
   isBranchCreated=1
 elif test "$branchOption" = 2; then
-    git checkout --no-track -b "dvbg-"${ticket,,}"/"$USERNAME"/"${description,,}
+    git checkout --no-track -b "dvbg-"${ticket,,}"/"$USERNAME"/"${description,,} origin/main
     isBranchCreated=1
 elif test "$branchOption" = 3; then
 	git checkout --no-track -b "qabg-"${ticket,,}"/"$USERNAME"/"${description,,} origin/main
